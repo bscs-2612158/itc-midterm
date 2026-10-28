@@ -1,0 +1,85 @@
+body{
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+
+
+}
+.rectangle{
+    height: 400px;
+    width: 600px;
+    border: 2px solid black;
+    overflow: hidden;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-between;
+    background-color: azure;
+    overflow: hidden;
+    display: flex;
+
+}
+.profile{
+    height:400px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+.left{
+    
+     height:200;
+     gap: 10px;
+     width: 600px;
+     align-items: space-between;
+     justify-content: space-between;
+     flex:1;
+     display:flex;
+     
+     
+}
+.right{
+    display: flex;
+
+    width: 600px;
+    height: 20px;
+    flex:1;
+   align-items: space-between;
+   justify-content: space-between;
+}
+img{
+    border-radius: 50%;
+}
+.fa-xmark{
+    cursor: pointer;
+}
+input{
+    width: 200px;
+    height:15px;
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    
+
+
+}
+button{
+    cursor: pointer;
+    display: flex;
+
+}
+button:hover{
+    display :none;
+}
+.close{
+    display:none;
+}
+body:has(#close:checked) .parent{
+    display:none;
+}
+body:has(#close:checked ).close{
+    display: block;
+}
